@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headerTExtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:fontFamily="@font/hobo"
+        android:text="wyszukaj restauracje"
+        android:textAlignment="center"
+        android:textColor="@color/indigo"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TextView
+        android:id="@+id/logTextView"
+        android:layout_width="238dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/hobo"
+        android:text="logowanie"
+        android:textAlignment="center"
+        android:textColor="@color/lightBeige"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerTExtView" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="224sp"
+        android:layout_height="42sp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:fontFamily="@font/hobo"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/lightPink"
+        android:textColorHint="@color/lightPink"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logTextView" />
+
+    <EditText
+        android:id="@+id/pwdEditText"
+        android:layout_width="224sp"
+        android:layout_height="42sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:textSize="25sp"
+        android:fontFamily="@font/hobo"
+        android:hint="hasło"
+        android:inputType="textPassword"
+        android:textColor="@color/lightPink"
+        android:textColorHint="@color/lightPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="112sp"
+        android:layout_height="42sp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/hobo"
+        android:text="zaloguj"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="@color/darkPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwdEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
