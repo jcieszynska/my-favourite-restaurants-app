@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Moje Restauracje</string>
+    <string name="title_activity_maps">Mapa</string>
 </resources>
