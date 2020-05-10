@@ -19,38 +19,20 @@ import java.util.List;
 import static android.graphics.Typeface.createFromAsset;
 
 public class ListActivity extends AppCompatActivity {
-    private ArrayAdapter mAdapter;
-    private Typeface mTypeface;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-       // mTypeface = Typeface.createFromAsset(getAssets(),"fonts/hobo.otf");
 
 
         ListView listView = findViewById(R.id.listView);
         final ArrayList<String> places = new ArrayList<>();
-        places.add("Dodaj nowe miejsce...");
+        places.add("Dodaj aktualne miejsce do listy...");
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,places)
-//        {
-//            public View getView(int position, View convertView, ViewGroup parent) {
-//                // Cast the list view each item as text view
-//                TextView item = (TextView) super.getView(position, convertView, parent);
-//
-//                // Set the typeface/font for the current item
-//                item.setTypeface(mTypeface);
-//
-//
-//                // Change the item text size
-//                item.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 18);
-//
-//                // return the view
-//                return item;
-//            }
-//        }
-        ;
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,places);
         listView.setAdapter(arrayAdapter);
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
