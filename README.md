@@ -4,7 +4,7 @@
 - [About](#about)
 - [Visuals](#visuals)
 - [Technologies](#technologies)
-- [Status] (#status)
+- [Status](#status)
 - [Contact](#contact)
 ## About
 This application was designed for a student project in Android. The target group of this app are foodies, who have a passion of exploring every restaurant in the nearby. 
@@ -57,8 +57,8 @@ The biggest challenge I faced was the list functionality. I used the geocodet en
 
  ```
  
- ## Status 
+## Status 
 Although, I am aware of a lot of shortcomings (such as the font of the list view, no registry for new users or the list could be saved in the cloud database) I decided to leave it as it is for the sake of the project. I am quite proud with the result that I have achieved. I'm happy with the knowledge that I gained during this project and it was also very interesting to mix it with UI designing. 
  
- ## Contact 
+## Contact 
  Made by @jcieszynska
